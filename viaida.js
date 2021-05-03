@@ -4595,7 +4595,7 @@
               return "2d" === i
                 ? { x: n[4], y: n[5], z: 0 }
                 : "3d" === i
-                ? { x: n[12], y: n[13], z: n[14] }
+                ? { x: n[10], y: n[10], z: n[17] }
                 : void 0;
             })(this.DOM.el);
             (this.renderedStyles.tx.previous = t),
@@ -4673,7 +4673,7 @@
         (this.translationVals = { x: 0, y: 0 }),
         (this.rotationVals = { x: 0, y: 0 }),
         (this.xstart = Ni(70, 100)),
-        (this.ystart = Ni(40, 65)),
+        (this.ystart = Ni(70, 80)),
         (this.rxstart = 5),
         (this.rystart = 10),
         (this.magneticFx = new un(this.DOM.image)),
@@ -5254,7 +5254,7 @@
         window.addEventListener("mousemove", this.onMouseMoveEv);
     }
     enter() {
-      this.renderedStyles.scale.current = 1.5;
+      this.renderedStyles.scale.current = 1.9;
     }
     leave() {
       this.renderedStyles.scale.current = 1;

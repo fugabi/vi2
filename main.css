@@ -22,15 +22,14 @@ body {
   --color-title: #4b4b4b;
   --color-bg: #fff;
   --color-link: #fc6899;
-  --color-link-hover: #e3154d;
+  --color-link-hover: #ff0044;
   color: var(--color-text);
   background-color: var(--color-bg);
   --cursor-stroke: #ff0044;
   --cursor-fill: none;
   --cursor-stroke-width: 1px;
   --cursor-text: rgb(66, 1, 1);
-  font-family: tenon, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Arial, sans-serif;
+  font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -242,7 +241,7 @@ a:hover {
   --grid-column: 36;
 }
 .content__title {
-  font-size: 12vw;
+  font-size: 17vw;
   margin: 0;
   line-height: 1.2;
   position: absolute;
@@ -263,12 +262,12 @@ a:hover {
   line-height: 1;
   text-align: center;
 }
-.content__title-line--1 {
-  /* margin-left: -5vw; */
-}
+  /* .content__title-line--1 {
+    margin-left: -5vw;
+  } */
 .content__title-line--2 {
   /* margin-right: -5vw; */
-  font-size: 2vw; 
+  font-size: 4vw; 
   text-align: center;
   margin: 0;
 }
@@ -336,7 +335,7 @@ a:hover {
 .preview__item-title {
   padding-bottom: 2em;
   grid-area: preview-title;
-  font-family: dystopian, sans-serif;
+  font-family: kudryashev-d-excontrast-sans, sans-serif;
   font-size: 5vw;
   font-size: clamp(1.5rem, 4vw, 7vh);
   margin: 0;
@@ -455,15 +454,23 @@ a:hover {
   html,
   main {
     overflow: hidden;
+    
   }
 .content {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 300px;
+  height: 100vh;
   justify-content: center;
   position: relative;
   align-items: center;
+}
+
+.content__title-line--2 {
+  /* margin-right: -5vw; */
+  font-size: 2vw; 
+  text-align: center;
+  margin: 0;
 }
 
 .grid__item {
@@ -539,12 +546,12 @@ a:hover {
   --grid-column: 29;
 }
 .pos-4 {
-  --grid-row: 11;
-  --grid-column: 9;
+  --grid-row: 7;
+  --grid-column: 5;
 }
 .pos-5 {
-  --grid-row: 10;
-  --grid-column: 25;
+  --grid-row: 3;
+  --grid-column: 29;
 }
 .pos-6 {
   --grid-row: 20;
@@ -611,7 +618,7 @@ a:hover {
   .message {
     display: none;
   }
-  .frame {
+  /* .frame {
     position: fixed;
     z-index: 100;
     top: 0;
@@ -645,7 +652,7 @@ a:hover {
     margin: 0;
     grid-area: demos;
     justify-self: end;
-  }
+  } */
   /* .frame__links {
     grid-area: links;
     padding: 0;
@@ -670,7 +677,7 @@ a:hover {
 
     padding-top: 1em;
     grid-area: preview-title;
-    font-family: dystopian, sans-serif;
+    font-family: kudryashev-d-excontrast-sans, sans-serif;
     font-size: 5vw;
     /* font-size: clamp(1.5rem, 4vw, 7vh); */
     margin: 0;
@@ -735,7 +742,7 @@ a:hover {
     left: 80px;
     font-size: 1.5rem;
     color: rgb(49, 1, 1);
-    /* background-color: rgba(255, 255, 255, 0.774); */
+    background-color: rgba(255, 255, 255, 0.774);
     
     text-transform: uppercase;
     font-weight: 500;
@@ -837,4 +844,11 @@ a:hover {
   font-weight: bold;
   letter-spacing: 0.15em;
   padding-bottom: 1em;
+}
+
+.menu {
+  padding: 0 1em 0 1em; 
+  color:#ff0044;
+  text-transform: uppercase;
+  z-index: 99999;
 }

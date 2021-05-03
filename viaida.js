@@ -2993,7 +2993,7 @@
     Cr = {
       autoAlpha: "opacity,visibility",
       scale: "scaleX,scaleY",
-      alpha: "opacity",
+      // alpha: "opacity",
     },
     Lr = function (t, e) {
       return e.set(e.t, e.p, Math.round(1e4 * (e.s + e.c * t)) / 1e4 + e.u, e);
